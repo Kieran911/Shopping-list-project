@@ -36,5 +36,10 @@ function createIcon(classes) {
   return icon;
 }
 
+function removeItem(e) {
+  console.log(e.target);
+}
+
 //Event Listeners
 itemForm.addEventListener('submit', addItem);
+itemList.addEventListener('click', removeItem);
